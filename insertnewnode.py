@@ -9,14 +9,20 @@ Original file is located at
 
 #node class
 class node:
-  def__init__(self,data):
+    #constructor
+  def__init__(self,data, next=None):
     self.data=data
-    self.next=None
-
+    self.next=next
+    
+    #creating a single node
+    first = Node(3)
+    print(first.data)
+    
 #creating linked list class
 class Linkedlist:
   def__init__(self):
     self.start=None
+    
 #Function to insert new node at last
   def insertlast(self,value):
     newNode=node(value)
